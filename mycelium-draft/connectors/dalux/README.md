@@ -1,18 +1,30 @@
-# Mycelium-for-Dalux
+# mycelium-for-dalux
 
-Live REST connector: Dalux Field/Build **issues & defects** → Connective Spine. A **bridge** for
-firms already on Dalux (an onramp to Loam + the OpenAEC backbone).
+A [Mycelium](https://connectivespine.org) connector for **Dalux Field/Build** — site issue records joined back to the source BIM via `ifcGuid`.
 
-- **Auth:** `X-API-KEY` header (Dalux Build API; no OAuth). Config: `DALUX_URL`, `DALUX_API_KEY`,
-  `DALUX_PROJECT_ID`.
-- **Join key:** `ifcGuid` — Dalux issues are BCF-style and point at element GUIDs.
-- **Freshness:** `live` (direct API pull).
-- **Provenance:** one `issue_observed` event per issue.
-- **Residency:** Dalux is **EU (Danish)** but a **third-party SaaS** — outbound read; the
-  hosted-source caveat applies (firm's data on Dalux's cloud).
-- **Access:** requires the firm's Dalux subscription with API access enabled + a key.
-- **Gap:** needs the `ifcGuid` adapter patch
-  ([`../../PATCH-spine-adapter-ifcguid.md`](../../PATCH-spine-adapter-ifcguid.md)) — until then,
-  identity is hand-built here.
-- **Endpoints:** best-effort, marked `// verify` — confirm against the Dalux Build API docs.
-- **Status:** 🧪 experimental (draft). **License:** Apache-2.0.
+## Install
+
+```sh
+npm install
+```
+
+## Run
+
+```sh
+node connector.mjs
+```
+
+Should print `"conformant": true`.
+
+## Wire it to real Dalux
+
+Replace `fetchSource()` in `connector.mjs` with a call to the Dalux Field/Build API. Keep the field shape — the spine adapter normalises and conformance-checks the rest.
+
+## Reference
+
+- [Mycelium spec](https://connectivespine.org/spec/)
+- [mycelium-sdk on npm](https://www.npmjs.com/package/mycelium-sdk)
+
+## License
+
+Apache-2.0

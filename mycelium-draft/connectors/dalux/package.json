@@ -1,10 +1,11 @@
 {
   "name": "mycelium-for-dalux",
   "version": "0.1.0",
-  "description": "Live REST connector: Dalux Field/Build issues → Connective Spine",
+  "description": "Mycelium connector — Dalux Field/Build issue records",
   "type": "module",
+  "main": "connector.mjs",
+  "scripts": { "start": "node connector.mjs", "test": "node connector.mjs" },
+  "dependencies": { "mycelium-sdk": "^0.1.0" },
   "license": "Apache-2.0",
-  "dependencies": {
-    "mycelium-sdk": "^0.1.0"
-  }
+  "engines": { "node": ">=18" }
 }
