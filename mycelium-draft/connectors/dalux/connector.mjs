@@ -5,9 +5,7 @@
 // Dalux is a cloud REST source, auth = X-API-KEY header (no OAuth). Issues are
 // BCF-style and carry element IFC GUIDs -> join key is ifcGuid.
 // NOTE: endpoint/field names are best-effort vs the Dalux Build API — verify.
-import { stamp, SPINE_VERSION } from '../../lib/spine-adapter.mjs';
-import { checkConformance } from '../../conformance/validate.mjs';
-import { append } from '../../lib/provenance.mjs';
+import { stamp, SPINE_VERSION, checkConformance, append } from 'mycelium-sdk';
 
 const SOURCE  = 'dalux';
 const BASE    = process.env.DALUX_URL || 'https://field.dalux.com/service/api/v1'; // verify

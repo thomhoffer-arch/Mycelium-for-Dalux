@@ -1,0 +1,10 @@
+{
+  "name": "mycelium-for-dalux",
+  "version": "0.1.0",
+  "description": "Live REST connector: Dalux Field/Build issues → Connective Spine",
+  "type": "module",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "mycelium-sdk": "^0.1.0"
+  }
+}
