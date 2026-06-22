@@ -5,8 +5,9 @@
   "type": "module",
   "main": "connector.mjs",
   "scripts": {
-    "start": "node connector.mjs",
-    "test":  "node connector.mjs"
+    "start":  "node connector.mjs",
+    "test":   "node connector.mjs",
+    "setup":  "node -e \"process.exit(parseInt(process.versions.node)<18?1:0)\" || (echo 'Node 18+ required' && exit 1) && npm install && node connector.mjs"
   },
   "license": "Apache-2.0",
   "engines": { "node": ">=18" }
