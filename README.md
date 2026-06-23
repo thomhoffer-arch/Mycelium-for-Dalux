@@ -1,6 +1,6 @@
 # Mycelium-for-Dalux
 
-Mycelium connector for **Dalux Field/Build** — pulls BCF topics into the Connective Spine, joined to your BIM via `ifcGuid`.
+A **Mycelium Studio** connector for **Dalux Field/Build** — pulls BCF topics into Mycelium Studio, joined to your BIM via `ifcGuid`.
 
 ## One-click install
 

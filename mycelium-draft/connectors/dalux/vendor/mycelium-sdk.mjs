@@ -1,5 +1,5 @@
-// Vendored Mycelium SDK helpers for Mycelium-for-Dalux.
-// Re-sync from Mycelium/packages/mycelium-sdk when the canonical source updates.
+// Vendored Mycelium Studio SDK helpers for Mycelium-for-Dalux.
+// Re-sync from Mycelium Studio/packages/mycelium-sdk when the canonical source updates.
 // Exports consumed here: runAdapter, deriveIfcGuid, append.
 
 import { appendFileSync } from 'node:fs';
@@ -47,7 +47,7 @@ export async function runAdapter(config, { fetchSource }) {
 // (22-char custom-base64 string). Algorithm: strip dashes from the episode GUID,
 // XOR with the element id, encode with the IFC char table.
 // Stub: throws if called — replace with the real implementation from
-// Mycelium/packages/mycelium-sdk once available.
+// Mycelium Studio/packages/mycelium-sdk once available.
 export function deriveIfcGuid(revitUniqueId) {
   throw new Error(
     `deriveIfcGuid: real implementation required for UniqueId "${revitUniqueId}". ` +

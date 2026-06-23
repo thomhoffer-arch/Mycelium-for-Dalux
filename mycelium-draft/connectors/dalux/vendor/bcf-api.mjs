@@ -1,4 +1,4 @@
-// Canonical BCF-API → Connective Spine mapping.
+// Canonical BCF-API → Mycelium Studio mapping.
 //
 // HOUSE RULE: this file is the single source of truth for the BCF topic→spine
 // mapping. It is **vendored** (copied identically) into each connector that
