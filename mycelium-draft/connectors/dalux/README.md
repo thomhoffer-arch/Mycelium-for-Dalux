@@ -1,6 +1,6 @@
 # mycelium-for-dalux
 
-A [Mycelium](https://connectivespine.org) connector for **Dalux Field/Build** — BCF topics joined back to the source BIM via `ifcGuid`, with OAuth2 auth, full pagination, and status write-back.
+A **Mycelium Studio** connector for **Dalux Field/Build** — BCF topics joined back to the source BIM via `ifcGuid`, with OAuth2 auth, full pagination, and status write-back.
 
 ## Install
 
@@ -56,10 +56,10 @@ Emits `proposed` → `executed` provenance events to `ledger.jsonl`.
 
 | File | Source |
 |---|---|
-| `vendor/bcf-api.mjs` | `Mycelium/packages/bcf-api/bcf-api.mjs` |
-| `vendor/mycelium-sdk.mjs` | `Mycelium/packages/mycelium-sdk/mycelium-sdk.mjs` |
+| `vendor/bcf-api.mjs` | `Mycelium Studio/packages/bcf-api/bcf-api.mjs` |
+| `vendor/mycelium-sdk.mjs` | `Mycelium Studio/packages/mycelium-sdk/mycelium-sdk.mjs` |
 
-To re-sync: `cp <Mycelium>/packages/bcf-api/bcf-api.mjs vendor/bcf-api.mjs` (and likewise for the SDK).
+To re-sync: `cp <Mycelium Studio>/packages/bcf-api/bcf-api.mjs vendor/bcf-api.mjs` (and likewise for the SDK).
 
 ## Wire it to real Dalux
 
@@ -67,7 +67,6 @@ To re-sync: `cp <Mycelium>/packages/bcf-api/bcf-api.mjs vendor/bcf-api.mjs` (and
 
 ## Reference
 
-- [Mycelium spec](https://connectivespine.org/spec/)
 - [BCF-API 2.1](https://github.com/buildingSMART/BCF-API)
 
 ## License
